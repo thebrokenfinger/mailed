@@ -1,0 +1,28 @@
+{
+  "name": "@mailed/extension-horizontal-rule",
+  "version": "0.0.1",
+  "keywords": [
+    "mailed",
+    "mailed-extension"
+  ],
+  "author": "Yatharth K <yatharth01@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebrokenfinger/mailed",
+    "directory": "packages/extension-horizontal-rule"
+  },
+  "dependencies": {
+    "@tiptap/extension-horizontal-rule": "^2.0.4"
+  },
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "clean": "rimraf dist"
+  }
+}

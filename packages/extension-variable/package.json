@@ -1,0 +1,34 @@
+{
+  "name": "@mailed/extension-variable",
+  "version": "0.0.1",
+  "keywords": [
+    "mailed",
+    "mailed-extension"
+  ],
+  "author": "Yatharth K <yatharth01@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebrokenfinger/mailed",
+    "directory": "packages/extension-variable"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.0.4",
+    "@tiptap/extension-mention": "^2.0.4",
+    "@tiptap/pm": "^2.0.4",
+    "@tiptap/suggestion": "^2.0.4"
+  },
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "clean": "rimraf dist"
+  }
+}
