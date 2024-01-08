@@ -1,5 +1,6 @@
 {
   "name": "mailed",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
