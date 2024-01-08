@@ -1,9 +1,8 @@
 import { Document as TiptapDocument } from "@tiptap/extension-document";
-import pkg from "../package.json";
 
 export * from "@tiptap/extension-document";
 
-export const VERSION = pkg.version;
+export const VERSION = "0.0.3";
 
 export const Document = TiptapDocument.extend({
   addAttributes() {
