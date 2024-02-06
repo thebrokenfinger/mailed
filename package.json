@@ -17,6 +17,13 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna run clean",
-    "publish": "lerna publish --no-git-tag-version --no-push"
+    "release": "lerna version --no-push --force-publish",
+    "release:major": "lerna version major --no-push --no-git-tag-version --force-publish",
+    "release:major:pre": "lerna version premajor --no-push --no-git-tag-version --force-publish --preid rc",
+    "release:minor": "lerna version minor --no-push --no-git-tag-version --force-publish",
+    "release:minor:pre": "lerna version preminor --no-push --no-git-tag-version --force-publish --preid rc",
+    "release:patch": "lerna version patch --no-push --no-git-tag-version --force-publish",
+    "release:patch:pre": "lerna version prepatch --no-push --no-git-tag-version --force-publish --preid rc",
+    "release:pre": "lerna version prerelease --no-push --no-git-tag-version --force-publish --preid rc"
   }
 }
