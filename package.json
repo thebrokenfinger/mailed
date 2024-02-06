@@ -5,10 +5,14 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "8.0.1",
-    "microbundle": "^0.15.1",
+    "@lerna/batch-packages": "^3.16.0",
+    "@lerna/filter-packages": "^6.4.1",
+    "@lerna/project": "^6.4.1",
+    "lerna": "^6.6.1",
     "prettier": "^3.1.1",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
   },
   "scripts": {
     "build": "lerna run build",

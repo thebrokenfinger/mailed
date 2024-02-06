@@ -22,7 +22,7 @@
     "import": "./dist/index.js"
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "tsup src/index.ts --out-dir dist",
     "clean": "rimraf dist"
   },
   "files": [
