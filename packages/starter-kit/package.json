@@ -1,0 +1,56 @@
+{
+  "name": "@mailed/starter-kit",
+  "version": "0.0.7",
+  "keywords": [
+    "mailed",
+    "mailed starter kit"
+  ],
+  "author": "Yatharth K <yatharth01@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebrokenfinger/mailed",
+    "directory": "packages/starter-kit"
+  },
+  "dependencies": {
+    "@mailed/extension-blockquote": "^0.0.7",
+    "@mailed/extension-bold": "^0.0.7",
+    "@mailed/extension-bullet-list": "^0.0.7",
+    "@mailed/extension-document": "^0.0.7",
+    "@mailed/extension-dropcursor": "^0.0.7",
+    "@mailed/extension-footer": "^0.0.7",
+    "@mailed/extension-gapcursor": "^0.0.7",
+    "@mailed/extension-hard-break": "^0.0.7",
+    "@mailed/extension-heading": "^0.0.7",
+    "@mailed/extension-history": "^0.0.7",
+    "@mailed/extension-horizontal-rule": "^0.0.7",
+    "@mailed/extension-image": "^0.0.7",
+    "@mailed/extension-italic": "^0.0.7",
+    "@mailed/extension-link": "^0.0.7",
+    "@mailed/extension-list-item": "^0.0.7",
+    "@mailed/extension-ordered-list": "^0.0.7",
+    "@mailed/extension-paragraph": "^0.0.7",
+    "@mailed/extension-placeholder": "^0.0.7",
+    "@mailed/extension-strike": "^0.0.7",
+    "@mailed/extension-text": "^0.0.7",
+    "@mailed/extension-text-align": "^0.0.7",
+    "@mailed/extension-underline": "^0.0.7",
+    "@tiptap/core": "^2.0.4"
+  },
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --out-dir dist",
+    "clean": "rimraf dist"
+  },
+  "files": [
+    "dist"
+  ]
+}
